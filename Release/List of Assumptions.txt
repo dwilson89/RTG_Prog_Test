@@ -1,0 +1,21 @@
+List of Assumptions
+
+The following assumptions were made, whilst developing a solution:
+
+-The use of the following win32 libraries were allowed - GLFW, OpenGL, GLEW, SOIL
+-Assumption the animation was 2d, and 8 png files (animation frame) were to be used; Note, I obtained a simple 8 frame 2D animation off a colleague. 
+-Following the above assumption I assumed an orthographic view would be acceptable.
+-Assumed a minimum window size would be 800x600, it has been designed to be resized to larger dimensions.
+-Assumed anywhere beyond the edges of the screen, meant just sitting anywhere on the outside border, e.g.
+	-x not being less than the -size.x of the logo width or x being greater than window width
+	-y not being less than the -size.y of the logo height or y being greater than window height
+-Following the above assumption, I assumed the position would be randomly generated, given these constraints.
+-Assumed entry direction would be fixed given its starting location. e.g
+	-NW quadrant - south-east direction
+	-SW quadrant - north-east direction
+	-NE quadrant - south-west direction
+	-SE quadrant - north-west direction
+-Assumed the demo would need the option to exit the animation, this has been implemented; 
+	-the user can press "P" to cancel the animation 
+	-the user can press "R" to restart it 
+	-the user can press "Esc" to terminate the application. 
